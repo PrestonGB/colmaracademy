@@ -1,3 +1,62 @@
+html {
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+
+}
+
+header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding-left: 24px;
+}
+
+header nav ul {
+  display: flex;
+  padding-right: 16px;
+}
+
 header nav ul li {
-  display: inline-block;
+  padding: 8px;
+}
+
+.banner {
+  display: flex;
+  width: auto;
+}
+
+.bannerimg {
+  width: 60%;
+  height: auto;
+}
+
+.info {
+  display: flex;
+}
+
+.info .main{
+  width: 60%;
+  height: auto;
+}
+
+.tile {
+  display: flex;
+}
+
+
+.courserow {
+  display: flex;
+}
+
+.thesis {
+  display: flex;
 }
