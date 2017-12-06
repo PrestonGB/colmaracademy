@@ -78,21 +78,37 @@ ul li a:active {
 }
 
 .tagline {
-  width: 40%;
+  width: 30%;
   line-height: 1.2;
 
 }
 
-.tagline h1 {
+ h1 {
   color: black;
   font-weight: bold;
   font-size: 36px;
-  margin: 15px 0px;
+  margin: 32px 0px 24px 0px ;
 }
 
-.tagline p {
-  margin: 15px 0px;
+h3 {
+  font-weight: bold;
+  margin-bottom: 0px;
+  font-size: 24px;
 }
+
+h4, p {
+  margin: 24px 0px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .btn {
   display: block;
   text-align: center;
@@ -114,16 +130,93 @@ ul li a:active {
 .info {
   background-color: white;
   display: flex;
-  align-items: center;
+}
+
+.main {
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.main img {
+  max-width: 100%;
+}
+
+.main p,
+.content p {
+  font-size: 18px;
+  color: grey;
+}
+
+
+
+.tiles {
+  margin-top: 24px;
+  width: 35%;
 }
 
 .tile {
   display: flex;
+  align-items: center;
+  max-width: 100%;
+  border: grey solid 1px;
+}
+
+.tile img {
+  width: 35%;
+  padding: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.content  a {
+  color: rgba(63, 200, 255, 1);
+}
+
+.courses {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.courses .body {
+  padding: 32px 72px;
+}
+
+.courses h1 {
+  margin-top: 0px;
+  margin-bottom: 32px;
 }
 
 
 .courserow {
   display: flex;
+  max-width: 100%;
+}
+
+.courserow img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course {
+  background-color: white;
+  width: 30%;
+  margin: 16px;
+  text-align: left;
+}
+
+.course h3 {
+  margin-top: 16px;
+}
+
+.course h3,
+.course h4,
+.course p {
+  margin-left: 16px;
 }
 
 .thesis {
