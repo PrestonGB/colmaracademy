@@ -1,51 +1,120 @@
 html {
-  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 body {
-
+  font-family: "Helvetica", sans-serif;
 }
 
 header {
+  background-color: white;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+nav {
   display: flex;
-  height: 64px;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  height: 64px;
 }
 
-header .logo {
+nav section {
   display: flex;
   align-items: center;
+}
+
+.logo {
   height: 32px;
-  padding-left: 24px;
+  margin-left: 24px;
+  font-size: 24px;
 }
 
-header nav ul {
-  display: flex;
-  padding-right: 16px;
+.logo span:nth-child(even) {
+  font-weight: bold;
 }
 
-header nav ul li {
-  padding: 8px;
+.logo span:nth-child(odd) {
+  font-weight: light;
+  color: grey;
 }
 
-.banner {
-  display: flex;
+.logo img {
+  height: 32px;
   width: auto;
 }
 
-.bannerimg {
+ul {
+  margin-right: 16px;
+}
+
+ul li {
+  display:inline-block;
+  margin: 8px;
+  font-size: 20px;
+}
+
+ul li a:hover {
+  color: grey;
+}
+
+ul li a:active {
+  color: darkgrey;
+}
+
+.banner {
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
   width: 60%;
-  height: auto;
+  margin: 32px 24px;
+}
+
+.tagline {
+  width: 40%;
+  line-height: 1.2;
+
+}
+
+.tagline h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 15px 0px;
+}
+
+.tagline p {
+  margin: 15px 0px;
+}
+.btn {
+  display: block;
+  text-align: center;
+  background-color: darkgrey;
+  border: black solid 1px;
+  color: white;
+  padding: 8px;
+  margin: 15px 0px;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
+.btn:active {
+  background-color: black;
 }
 
 .info {
+  background-color: white;
   display: flex;
-}
-
-.info .main{
-  width: 60%;
-  height: auto;
+  align-items: center;
 }
 
 .tile {
