@@ -161,6 +161,10 @@ h6 {
   border: grey solid 1px;
 }
 
+.tile:hover {
+  background-color: lightgrey;
+}
+
 .tile img {
   width: 35%;
   padding: 16px;
@@ -219,6 +223,34 @@ h6 {
   margin-left: 16px;
 }
 
+.course p {
+  font-size: 16px;
+}
+
 .thesis {
+  width: 100%;
+}
+
+.thesis .body {
   display: flex;
+}
+
+.thesis .body .main {
+  margin: 0px;
+  width: 60%;
+  margin: 0px 24px;
+
+}
+
+video {
+  max-width: 100%;
+}
+
+.thesis h1 {
+  text-align: center;
+  margin: 32px 0px;
+}
+
+.subsection {
+  width: 35%;
 }
