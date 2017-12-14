@@ -51,26 +51,3 @@ a {
   color: black;
   text-decoration: none;
 }
-
-footer {
-  border-top: grey solid 1px;
-  line-height:1;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer p {
-  margin-left: 24px;
-  margin-top: 16px;
-  font-size: 14px;
-}
-
-footer ul li {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-footer ul {
-  margin-right: 8px;
-
-}

@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -9,10 +9,11 @@ body {
 
 header {
   background-color: white;
+
 }
 
 .container {
-  width: 1080px;
+  width: 1024px;
   margin: 0 auto;
 }
 
@@ -20,7 +21,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 4rem;
 }
 
 nav section {
@@ -28,10 +29,15 @@ nav section {
   align-items: center;
 }
 
+.logo img {
+  height: 2rem;
+  width: auto;
+}
+
 .logo {
-  height: 32px;
-  margin-left: 24px;
-  font-size: 24px;
+  height: 2rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .logo span:nth-child(even) {
@@ -43,19 +49,14 @@ nav section {
   color: grey;
 }
 
-.logo img {
-  height: 32px;
-  width: auto;
-}
-
-ul {
-  margin-right: 16px;
+.menu {
+  margin-right: 1rem;
 }
 
 ul li {
-  display:inline-block;
-  margin: 8px;
-  font-size: 20px;
+  display:inline;
+  margin: .5rem;
+  font-size: 1.25rem;
 }
 
 ul li a:hover {
@@ -74,7 +75,7 @@ ul li a:active {
 
 .banner img {
   width: 60%;
-  margin: 32px 24px;
+  margin: 2rem 1.5rem;
 }
 
 .tagline {
@@ -86,26 +87,26 @@ ul li a:active {
  h1 {
   color: black;
   font-weight: bold;
-  font-size: 36px;
-  margin: 32px 0px 24px 0px ;
+  font-size: 2rem;
+  margin: 2rem 0rem 1.5rem 0rem;
 }
 
 h3 {
   font-weight: bold;
-  margin-bottom: 0px;
-  font-size: 24px;
+  margin-bottom: 0rem;
+  font-size: 1.5rem;
 }
 
 h4, p {
-  margin: 24px 0px;
+  margin: 1.5rem 0rem;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: .75rem;
   font-weight: bold;
 }
 
@@ -115,8 +116,8 @@ h6 {
   background-color: darkgrey;
   border: black solid 1px;
   color: white;
-  padding: 8px;
-  margin: 15px 0px;
+  padding: .5rem;
+  margin: 1rem 0rem;
 }
 
 .btn:hover {
@@ -133,7 +134,7 @@ h6 {
 }
 
 .main {
-  margin: 32px 24px;
+  margin: 2rem 1.5rem;
   width: 60%;
 }
 
@@ -143,14 +144,14 @@ h6 {
 
 .main p,
 .content p {
-  font-size: 18px;
+  font-size: 1rem;
   color: grey;
 }
 
 
 
 .tiles {
-  margin-top: 24px;
+  margin-top: 1.5rem;
   width: 35%;
 }
 
@@ -166,7 +167,7 @@ h6 {
 
 .tile img {
   width: 35%;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .content {
@@ -186,12 +187,12 @@ h6 {
 }
 
 .courses .body {
-  padding: 32px 72px;
+  padding: 2rem 4.5rem;
 }
 
 .courses h1 {
-  margin-top: 0px;
-  margin-bottom: 32px;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -208,22 +209,22 @@ h6 {
 .course {
   background-color: white;
   width: 30%;
-  margin: 16px;
+  margin: 1rem;
   text-align: left;
 }
 
 .course h3 {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .course h3,
 .course h4,
 .course p {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .course p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .thesis {
@@ -235,9 +236,9 @@ h6 {
 }
 
 .thesis .body .main {
-  margin: 0px;
+  margin: 0rem;
   width: 60%;
-  margin: 0px 24px;
+  margin: 0rem 1.5rem;
 
 }
 
@@ -247,9 +248,68 @@ video {
 
 .thesis h1 {
   text-align: center;
-  margin: 32px 0px;
+  margin: 2rem 0rem;
 }
 
 .subsection {
   width: 35%;
+}
+
+footer {
+  border-top: grey solid 1px;
+  line-height:1;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+footer ul li {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+footer ul {
+  margin-top:1rem;
+  margin-right: .5rem;
+
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+    }
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .menu ul {
+    display:none;
+  }
+
+  .menu ul .mobile li a img{
+    display: block;
+  }
+
+  .logo span {
+    display:none;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .mobile {
+    display: none;
+  }
 }
