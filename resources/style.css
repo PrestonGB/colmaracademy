@@ -21,7 +21,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 64px;
 }
 
 nav section {
@@ -30,7 +30,7 @@ nav section {
 }
 
 .logo img {
-  height: 2rem;
+  height: 32px;
   width: auto;
 }
 
@@ -71,6 +71,7 @@ ul li a:active {
   background-color: lightgrey;
   display: flex;
   align-items: center;
+
 }
 
 .banner img {
@@ -79,16 +80,15 @@ ul li a:active {
 }
 
 .tagline {
-  width: 30%;
   line-height: 1.2;
-
+  margin-right: 64px;
 }
 
  h1 {
   color: black;
   font-weight: bold;
   font-size: 2rem;
-  margin: 2rem 0rem 1.5rem 0rem;
+  margin: 32px 0px 32px 0px;
 }
 
 h3 {
@@ -98,7 +98,7 @@ h3 {
 }
 
 h4, p {
-  margin: 1.5rem 0rem;
+  margin: 0px 0px 24px 0px
 }
 
 h4 {
@@ -117,7 +117,7 @@ h6 {
   border: black solid 1px;
   color: white;
   padding: .5rem;
-  margin: 1rem 0rem;
+  margin-bottom: 32px;
 }
 
 .btn:hover {
@@ -295,20 +295,44 @@ footer ul {
 }
 
 @media only screen and (max-width: 480px) {
-  .menu ul {
-    display:none;
+  .desktop {
+    display: none;
   }
-
-  .menu ul .mobile li a img{
-    display: block;
+  nav {
+    justify-content: space-between;
   }
-
+  .logo {
+    width: 25%;
+    margin: 0;
+    margin-left: 5%;
+  }
   .logo span {
     display:none;
   }
+  .menu {
+    width: 75%;
+    margin: 0;
+    margin-right: 5%;
+  }
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+    margin: 0
+  }
+  .tagline {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
-@media only screen and (min-width:480px) {
+@media only screen and (min-width: 480px) {
   .mobile {
     display: none;
   }
