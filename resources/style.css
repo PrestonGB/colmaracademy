@@ -146,6 +146,8 @@ h6 {
 .content p {
   font-size: 1rem;
   color: grey;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 
@@ -190,7 +192,7 @@ h6 {
   padding: 2rem 4.5rem;
 }
 
-.courses h1 {
+.courses .body h1 {
   margin-top: 0rem;
   margin-bottom: 2rem;
 }
@@ -289,9 +291,7 @@ footer ul {
 }
 
 @media only screen and (max-width: 720px) {
-  html {
-    font-size: 12px;
-  }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -330,10 +330,102 @@ footer ul {
     margin-left: 16px;
     margin-right: 16px;
   }
+  .info .main {
+    display: none;
+  }
+  .info .tiles {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .tile {
+    flex-direction: column;
+    width: 100%;
+  }
+  img .desktop {
+    display: none;
+  }
+  .tile img  {
+    width: 93.33%;
+    height: auto;
+    margin: 16px;
+    padding: 0px;
+  }
+  .content {
+    width: 93.33%;
+    margin-left: 32px;
+    margin-bottom: 16px;
+  }
+  .courses .body {
+    padding: 0;
+  }
+  .courses .body h1 {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+  .courserow .desktop {
+    display: none;
+  }
+  .courses .body {
+    background-color: white;
+  }
+  .courses .body h1 {
+    border-top: 1px solid lightgrey;
+    margin-top: 16px;
+    margin-bottom: 0px;
+  }
+  .courses .mobile {
+    flex-direction: column;
+    background-color: white;
+  }
+  .courses .mobile h3:hover {
+    background-color: grey;
+  }
+  .courses .mobile h3 {
+    padding: 16px 16px 24px 16px;
+    margin-bottom: 8px;
+    background-color: lightgrey;
+    text-align: left;
+  }
+  .thesis .body .subsection ,
+  .thesis .body .main p,
+  .thesis .body .main h3 {
+    display: none;
+  }
+  .thesis .body .main,
+  .thesis .body .main  video {
+    width: 100%;
+    margin: 0px;
+  }
+  .thesis {
+    border-top: 1px solid lightgrey;
+    margin-top: 24px;
+  }
+  .thesis h1 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+  }
+  .thesis video {
+    border: .5px solid lightgrey;
+  }
+  footer {
+    border-top: 0px;
+  }
+  footer p {
+    padding: 16px 0px 16px 0px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  footer ul {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 480px) {
   .mobile {
+    display: none;
+  }
+  .courses .mobile {
     display: none;
   }
 }
