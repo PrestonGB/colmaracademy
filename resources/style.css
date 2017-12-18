@@ -377,14 +377,14 @@ footer ul {
     flex-direction: column;
     background-color: white;
   }
-  .courses .mobile h3:hover {
-    background-color: grey;
-  }
   .courses .mobile h3 {
     padding: 16px 16px 24px 16px;
     margin-bottom: 8px;
     background-color: lightgrey;
     text-align: left;
+  }
+  .courses .mobile h3:hover {
+    background-color: grey;
   }
   .thesis .body .subsection ,
   .thesis .body .main p,
